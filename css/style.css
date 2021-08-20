@@ -205,10 +205,6 @@ footer .navegacion .nav-item a {
     color: white;
 }
 
-.derecha .icons div a:last-child {
-    margin-right: 0;
-}
-
 .derecha p {
     margin-right: 1rem;
     text-align: center;
@@ -221,7 +217,7 @@ footer .navegacion .nav-item a {
     width: 25%;
 }
 
-@media screen and (max-width: 768px) and (min-width: 240px) {
+@media screen and (max-width: 767px) and (min-width: 240px) {
     .navegacion {
         display: none;
     }
@@ -261,7 +257,7 @@ footer .navegacion .nav-item a {
     }
 }
 
-@media screen and (max-width: 2560px) and (min-width: 765px) {
+@media screen and (max-width: 2560px) and (min-width: 768px) {
     .body {
         width: 100%;
         background: url(../images/desktop/image-hero.jpg) no-repeat center center;
@@ -281,12 +277,10 @@ footer .navegacion .nav-item a {
         padding: 0;
         width: 25rem;
         margin-right: 2rem;
+        text-align: center;
     }
     .navegacion .nav-item a {
-        margin-right: 2rem;
-    }
-    .navegacion .nav-item a:last-child {
-        margin-right: 0rem;
+        margin-right: 1.5rem;
     }
     .nav-item:hover .line-efect,
     .icons div:hover .line-efect {
@@ -415,5 +409,38 @@ footer .navegacion .nav-item a {
         margin-top: 1rem;
         letter-spacing: 0.5px;
         text-align: right;
+    }
+}
+
+@media screen and (max-width: 1168px) and (min-width: 768px) {
+    .body .navegacion {
+        display: flex;
+        padding: 0;
+        margin-right: 1px;
+    }
+    .leader .texto {
+        padding: 0;
+        padding: 1.5rem;
+    }
+    .leader .texto h2 {
+        padding: 0;
+        margin-top: 1rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+    .leader .texto p {
+        width: 90%;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 777px) and (min-width: 621px) {
+    .content {
+        padding: 0rem;
+    }
+    .grid-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
